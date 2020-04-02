@@ -14,8 +14,10 @@ def print_table (n):
         print()
 
 # Demonstration
-def main ():
-    print_table(12)
+def main (n):
+    print_table(n)
 
 if __name__ == '__main__':
-    main()
+    from sys import argv
+    n = int(argv[1]) if len(argv) > 1 else 12
+    main(n)
