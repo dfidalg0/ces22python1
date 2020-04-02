@@ -3,10 +3,12 @@ from turtle import *
 t = Turtle()
 wn = Screen()
 
+# Setting window standards
 wn.bgcolor('#61cb6c')
 wn.setup(width = 600, height = 600)
 wn.title('Ex1')
 
+# Setting turtle standards
 t.color('#da54e6')
 t.pensize(3)
 
