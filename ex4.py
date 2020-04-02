@@ -1,11 +1,9 @@
-def sum_except_first_even (L):
+def sum_up_to_first_even (L):
     s = 0
-    found_even = False
     for number in L:
-        if not found_even and number % 2 == 1:
-            found_even = True
-        else:
-            s += number
+        if number % 2 == 1:
+            break
+        s += number
 
     return s
 
@@ -13,7 +11,7 @@ def sum_except_first_even (L):
 def main():
     L = [2,4,11,6,8,10,13]
 
-    x = sum_except_first_even(L)
+    x = sum_up_to_first_even(L)
 
     print(x)
 
