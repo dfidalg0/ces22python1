@@ -19,5 +19,10 @@ def main (n):
 
 if __name__ == '__main__':
     from sys import argv
-    n = int(argv[1]) if len(argv) > 1 else 12
+
+    try:
+        n = int(argv[1]) if len(argv) > 1 else 12
+    except ValueError:
+        n = 12
+
     main(n)
