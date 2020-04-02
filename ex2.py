@@ -23,7 +23,7 @@ def main ():
     # Setting window standards
     wn.bgcolor('#61cb6c')
     wn.setup(width = 600, height = 600)
-    wn.title('Ex1')
+    wn.title('Ex2')
 
     # Setting turtle standards
     t.color('#da54e6')
